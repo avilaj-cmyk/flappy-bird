@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://67gvmrhdgrji"]
+
+[ext_resource type="Texture2D" uid="uid://dualand3maoap" path="res://AllBird1.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://b6f7el74utsbw" path="res://bird.gd" id="1_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
+radius = 5.0
+
+[node name="Player" type="Area2D" unique_id=1270021973]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1425462105]
+texture = ExtResource("1_4flbx")
+hframes = 4
+vframes = 7
+frame = 12
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694720642]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_onrkg")
