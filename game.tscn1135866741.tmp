@@ -7,29 +7,16 @@
 [node name="Game" type="Node2D" unique_id=125726347]
 script = ExtResource("1_feb5d")
 
+[node name="Player" parent="." unique_id=1270021973 instance=ExtResource("1_80nbo")]
+position = Vector2(597.99994, 222.99994)
+rotation = -0.84823
+
 [node name="BG1" type="Sprite2D" parent="." unique_id=593820294]
-position = Vector2(1157, 0)
-scale = Vector2(4.515625, 3.2078125)
+scale = Vector2(4.515625, 3.2)
 texture = ExtResource("3_fc0e3")
 centered = false
 
 [node name="BG2" type="Sprite2D" parent="." unique_id=1201207911]
-scale = Vector2(4.5195313, 3.2)
+scale = Vector2(2.46875, 3.2)
 texture = ExtResource("3_fc0e3")
 centered = false
-
-[node name="Player" parent="." unique_id=1270021973 instance=ExtResource("1_80nbo")]
-position = Vector2(100, 351)
-rotation = -0.84823
-scale = Vector2(3, 3)
-
-[node name="Timer" type="Timer" parent="." unique_id=1712995739]
-
-[node name="Label" type="Label" parent="." unique_id=65807473]
-offset_left = -1.0001221
-offset_top = -2.0000002
-offset_right = 611.0
-offset_bottom = 241.0
-text = "My score"
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dxuad2wlttnhc"]
+
+[ext_resource type="Script" uid="uid://dx1e0w2ns8erm" path="res://menu.gd" id="1_lti8b"]
+
+[node name="Menu" type="Node2D" unique_id=961141113]
+script = ExtResource("1_lti8b")
+
+[node name="StartGame" type="Button" parent="." unique_id=1580221003]
+offset_left = 529.0
+offset_top = 283.0
+offset_right = 625.0
+offset_bottom = 314.0
+text = "Start Game
+"
+
+[node name="QuitGame" type="Button" parent="." unique_id=2048883498]
+offset_left = 528.0
+offset_top = 384.0
+offset_right = 620.0
+offset_bottom = 415.0
+text = "Quit Game"
+
+[connection signal="pressed" from="StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="QuitGame" to="." method="_on_quit_game_pressed"]

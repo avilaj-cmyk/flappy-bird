@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://op54d263mr32"]
+
+[ext_resource type="Script" uid="uid://ce72ot4yfjv08" path="res://pipes.gd" id="1_og227"]
+[ext_resource type="Texture2D" uid="uid://d1nvlhkykmpul" path="res://PipeStyle1.png" id="2_l4tgv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nq3k0"]
+size = Vector2(31.71429, 37.200005)
+
+[node name="Pipes" type="Node2D" unique_id=1632543578]
+scale = Vector2(-1, 1)
+script = ExtResource("1_og227")
+
+[node name="UpperPipe" type="Area2D" parent="." unique_id=919950028]
+scale = Vector2(7, 10)
+metadata/_edit_group_ = true
+
+[node name="PipeStyle1" type="Sprite2D" parent="UpperPipe" unique_id=1549456335]
+position = Vector2(-0.99999905, 1.0000038)
+scale = Vector2(1, 0.925)
+texture = ExtResource("2_l4tgv")
+hframes = 4
+vframes = 4
+frame = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpperPipe" unique_id=885219357]
+position = Vector2(-0.9999998, 0.9000006)
+scale = Vector2(0.9999999, 0.99999994)
+shape = SubResource("RectangleShape2D_nq3k0")
+
+[node name="LowerPipe" type="Area2D" parent="." unique_id=608202475]
+position = Vector2(-5.999998, 778)
+scale = Vector2(7, 10)
+metadata/_edit_group_ = true
+
+[node name="PipeStyle1" type="Sprite2D" parent="LowerPipe" unique_id=767806931]
+position = Vector2(-0.99999905, 1.0000038)
+scale = Vector2(1, 0.925)
+texture = ExtResource("2_l4tgv")
+hframes = 4
+vframes = 4
+frame = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LowerPipe" unique_id=1967733362]
+position = Vector2(-0.9999998, 0.9000006)
+scale = Vector2(0.9999999, 0.99999994)
+shape = SubResource("RectangleShape2D_nq3k0")
