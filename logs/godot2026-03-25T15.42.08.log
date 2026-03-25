@@ -1,0 +1,11 @@
+Godot Engine v4.6.1.stable.official.14d19694e - https://godotengine.org
+D3D12 12_0 - Forward Mobile - Using Device #0: Intel - Intel(R) Iris(R) Xe Graphics
+
+ERROR: Can't emit non-existing signal "quit_game".
+   at: emit_signalp (core/object/object.cpp:1296)
+   GDScript backtrace (most recent call first):
+       [0] _on_quit_game_pressed (res://menu.gd:21)
+ERROR: Can't emit non-existing signal "quit_game".
+   at: emit_signalp (core/object/object.cpp:1296)
+   GDScript backtrace (most recent call first):
+       [0] _on_quit_game_pressed (res://menu.gd:21)
